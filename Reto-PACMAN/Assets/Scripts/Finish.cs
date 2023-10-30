@@ -17,16 +17,20 @@ public class Finish : MonoBehaviour
     }
 
     private void ActivarScore()
+    //private void ActivarFinish()
     {
         animator.SetTrigger("Activar");
     }
 
-    public void PuntosEliminado(){
+    public void PuntosEliminado()
+    
+    {
         puntosEliminados += 1;
-        //if(puntosEliminados == CantidadPuntos)
-        {
-            //ActivarFinish();
-        }
-    }
 
+        if (puntosEliminados == cantidadPuntos);
+        {
+           // ActivarFinish();
+        }
+    } 
+    
 }
